@@ -1,0 +1,53 @@
+/*Selectores decendienes*/
+.mainTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+#globalNav .mainTitle{
+    color: rgb(172, 0, 0);
+    font-size: 16px;
+}
+.contenedor .mainTitle{
+    color: aqua;
+}
+footer h2{
+    color: green;
+}
+/*Selectores hijos*/
+footer > p{
+    background-color: rgb(255, 222, 243);
+}
+footer > p > span{
+    color: deeppink;
+}
+/*Selectores de herandad*/
+p ~ h2{
+    text-decoration: underline;
+}
+.developer{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+.developer + p{
+    background-color: rgb(167, 225, 236);
+}
+.contenedor > from > button{
+    color: white;
+    background-color: blue;
+}
+
+input[type]{
+    border-bottom: rgb(39, 75, 41) 2px dotted;
+    border-top: 4px solid red;
+}
+
+.contenedor input[type="password"]{
+    border-left: purple 2px dashed;
+    border-right: cyan 2px solid;
+}
+a[href$="org"]{
+    color: peru;
+}
+a[href^="aprendices"]{
+    color: rgb(227, 135, 255);
+}
